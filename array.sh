@@ -1,7 +1,9 @@
 #!/bin/bash
 
-fruits=('apple','banana','pomo')
+fruits=('apple' 'banana' 'pomo')
 
-echo "fruits ${fruits[1]}"
+echo "first fruit ${fruits[0]}"
+
+echo "second fruit ${fruits[1]}"
 
 echo "ALL fruits ${fruits[@]}"
