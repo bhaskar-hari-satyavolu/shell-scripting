@@ -23,7 +23,7 @@ VALIDATE(){
 
 if [ $ID -ne 0 ]
 then
-    echo "$R ERROR::$N run the script with root user"
+    echo -e "$R ERROR::$N run the script with root user"
 else
     echo "You are a root user"
 fi
@@ -36,6 +36,6 @@ do
         yum install $package -y &>> LOGFILE
         VALIDATE $? "Installation of $package"
     else
-        echo "$G package is already installed$N"
+        echo -e "$G package is already installed$N"
     fi
 done
